@@ -1,3 +1,4 @@
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 
 img {
     width: 200px;
@@ -5,5 +6,6 @@ img {
 }
 body {
     text-align: center;
-    font-family: arial;
+   font-family: Lobster;
+   color: #ff61c3;
 }
