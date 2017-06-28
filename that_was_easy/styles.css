@@ -4,8 +4,8 @@
    border-radius:150px;
    Border-color:black;
    Background-color:red;
-   Font-size:50px;
+   Font-size:100px;
    Color:white;
-   Font:courier;
+   font-family:"courier", Monospace;
 
 }
