@@ -2,12 +2,12 @@ body {
     text-align:center;
     background-color:black;
     color:white;
-    font-family:impact;
+    font-family:impact, monospace;
 }
 .pie {
     height:100px;
     width:100px;
-    font-family:impact;
+    font-family:impact, monospace;
     font-size:20px;
     border-radius:50px;
     background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJypstR_ZxTEwsfQJ0jyYion7wVBfdDmDHOaQvlVVBTDbgI1y");
@@ -18,7 +18,7 @@ body {
 }
 
 .dawg {
-    font-family:impact;
+    font-family:impact, monospace;
     color:white;
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJypstR_ZxTEwsfQJ0jyYion7wVBfdDmDHOaQvlVVBTDbgI1y);
     height:25px;
@@ -28,5 +28,9 @@ body {
     border-width:10px;
 }
 .doggo {
-    height:100px;
+    height:200px;
+}
+input::placeholder{
+    color:white;
+    text-align:center;
 }
