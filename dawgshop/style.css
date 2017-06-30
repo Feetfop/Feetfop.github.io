@@ -4,3 +4,29 @@ body {
     color:white;
     font-family:impact;
 }
+.pie {
+    height:100px;
+    width:100px;
+    font-family:impact;
+    font-size:20px;
+    border-radius:50px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJypstR_ZxTEwsfQJ0jyYion7wVBfdDmDHOaQvlVVBTDbgI1y");
+    color:white;
+    border-style:double;
+    border-color:white;
+    border-width:10px;
+}
+
+.dawg {
+    font-family:impact;
+    color:white;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJypstR_ZxTEwsfQJ0jyYion7wVBfdDmDHOaQvlVVBTDbgI1y);
+    height:25px;
+    width:100px;
+    border-radius:15px;
+    border-style:double;
+    border-width:10px;
+}
+.doggo {
+    height:100px;
+}
