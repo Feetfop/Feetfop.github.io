@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster');
 img {
-    width: 200px;
+    width: 40vh;
     
 }
 body {
@@ -10,18 +10,21 @@ body {
      background-repeat:repeat-Y;
      background-size:cover;
      text-align:center;
+     font-size:;
+     
     
 }
 .btn{
     text-align:center;
-    height:50px;
-    width:75px;
+    height:15vw;
+    width:21vw;
     background:black;
     color:white;
-    border-radius:38px;
+    border-radius:100vw;
     border-style:double none double none;
     border-width:7px;
     border-color:#db61ff;
+    font-size:3.3vw;
 }
 a:link{
     color:white;
@@ -39,4 +42,7 @@ a:active{
     color:white;
     font-family:'lobster',cursive;
     
+}
+h1{
+    font-size:10vh;
 }
