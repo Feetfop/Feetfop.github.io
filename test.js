@@ -32,3 +32,18 @@ function calculate() {
     }
 
     $("span").html(ans);
+    
+    $(function() {
+	// Get page title
+  	var pageTitle = $("Feetfop~Home").text();
+
+	// Change page title on blur
+	$(window).blur(function() {
+	  $("~Feetfop~").text("Don't forget to read this...");
+	});
+
+	// Change page title back on focus
+	$(window).focus(function() {
+	  $("~Feetfop~Home~").text(pageTitle);
+	});
+});
