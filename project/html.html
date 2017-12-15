@@ -6,6 +6,13 @@
 </div>
 <head>
 	<style>
+.rainbowize {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 		#snowflakeContainer {
     position: absolute;
     left: 0px;
@@ -42,7 +49,7 @@ body {
 </head>
 <body>
 
-<p id="demo"></p>
+<p id="demo" class="rainbowize"></p>
 
 <script>
 // Set the date we're counting down to
@@ -77,4 +84,59 @@ var x = setInterval(function Christmas() {
 <script src="//www.kirupa.com/js/fallingsnow_v6.js"></script>
 <script src="//www.kirupa.com/js/prefixfree.min.js"></script>
 </body>
+<script>
+(function( $ ) {
+
+  $.fn.rainbowize = function() {
+    return this.each(function() {
+      var rainbowtext = '';
+      var hue=0;
+      var step=0;
+
+      // get the current text inside element
+      var text = $(this).text();
+
+      // hue is 360 degrees
+      if (text.length > 0)
+        step = 360 / (text.length);
+
+      // iterate the whole 360 degrees
+      for (var i = 0; i < text.length; i++)
+      {
+        rainbowtext = rainbowtext + '<span style="color:' + color_from_hue(hue) + '">' + text.charAt(i) + '</span>';
+        hue += step;
+      }
+
+      $(this).html(rainbowtext);
+    });
+  };
+})( jQuery );
+
+(function( $ ) {
+ 
+  $.fn.rainbowize = function() {
+    return this.each(function() {
+      var rainbowtext = '';
+      var hue=0;
+      var step=0;
+ 
+      // get the current text inside element
+      var text = $(this).text();
+ 
+      // hue is 360 degrees
+      if (text.length > 0)
+        step = 360 / (text.length);
+ 
+      // iterate the whole 360 degrees
+      for (var i = 0; i < text.length; i++)
+      {
+        rainbowtext = rainbowtext + '<span style="color:' + color_from_hue(hue) + '">' + text.charAt(i) + '</span>';
+        hue += step;
+      }
+ 
+      $(this).html(rainbowtext);
+    });
+  };
+})( jQuery );
+</script>
 </html>
