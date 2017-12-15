@@ -1,6 +1,6 @@
         @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster');
 img {
-    width: 200px;
+    width: 200vw
     
 }
 body {
@@ -12,10 +12,10 @@ body {
      text-align:center;
     
 }
-.btn{
+#btn{
     text-align:center;
-    height:50px;
-    width:75px;
+    height:50vw;
+    width:75vw;
     background:black;
     color:white;
     border-radius:38px;

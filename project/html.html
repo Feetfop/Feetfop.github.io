@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	
+	<div id="snowflakeContainer">
+    <p class="snowflake">*</p>
+</div>
+<head>
+	<style>
+		#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+p {
+  text-align: center;
+  font-size: 13vw;
+	font-family:'Itim', "Pangolin", cursive;
+	color:red;
+}
+body {
+	background-color:blue;
+	background-image:url(https://www.winterbluemusic.com/wp-content/uploads/2016/12/Snoopy-Christmas-Wallpaper-Snoopy-Background.jpg);
+	background-size:cover;
+	
+}
+
+	</style>
+<link href="https://fonts.googleapis.com/css?family=Itim|Pangolin" rel="stylesheet">
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2017 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function Christmas() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<script src="//www.kirupa.com/js/fallingsnow_v6.js"></script>
+<script src="//www.kirupa.com/js/prefixfree.min.js"></script>
+</body>
+</html>
