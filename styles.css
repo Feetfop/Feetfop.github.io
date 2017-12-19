@@ -14,17 +14,22 @@ body {
      
     
 }
+.rainbowize{
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 .btn{
     text-align:center;
-    height:15vw;
-    width:21vw;
+    height:11vw;
+    width:17vw;
     background:black;
     color:white;
     border-radius:100vw;
     border-style:double none double none;
     border-width:7px;
     border-color:#db61ff;
-    font-size:3.3vw;
+    font-size:2.1vw;
 }
 a:link{
     color:white;
@@ -43,6 +48,6 @@ a:active{
     font-family:'lobster',cursive;
     
 }
-h1{
+p{
     font-size:10vh;
 }
