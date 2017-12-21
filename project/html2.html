@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	
+	<div id="snowflakeContainer">
+    <p class="snowflake">*</p>
+</div>
+<head>
+	<style>
+	#smol{
+	    text-align: center;
+	    font-size:6vw;
+	    font-family:'Itim', "Pangolin", cursive;
+	}
+.move {
+  position:absolute;
+  left:3vw;
+  right:3vw;
+  top:34vh;
+}
+.positiona{
+  position:absolute;
+  left:2vw;
+  right:2vw;
+  top:9vh;
+}
+		#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #FFFFFF;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+p {
+  color:#b62a1b;
+  /*background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;*/
+  text-align: center;
+  font-size: 13vw;
+	font-family:'Itim', "Pangolin", cursive;}
+body {
+	background-image:url(https://excelsior.com/wp-content/uploads/2016/11/iwpflgsr_elearning-challenge-winter-break.jpg);
+	background-size:cover;
+	background-repeat:repeat;
+}
+
+	</style>
+<link href="https://fonts.googleapis.com/css?family=Itim|Pangolin" rel="stylesheet">
+</head>
+<body>
+<p id=smol class=positiona>1st Semester is Almost Over!</p>
+<p id="demo" class="move b" ></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 22, 2017 14:15:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function Christmas() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+<script src="//www.kirupa.com/js/fallingsnow_v6.js"></script>
+<script src="//www.kirupa.com/js/prefixfree.min.js"></script>
+</body>
+<script>
+(function( $ ) {
+
+  $.fn.rainbowize = function() {
+    return this.each(function() {
+      var rainbowtext = '';
+      var hue=0;
+      var step=0;
+
+      // get the current text inside element
+      var text = $(this).text();
+
+      // hue is 360 degrees
+      if (text.length > 0)
+        step = 360 / (text.length);
+
+      // iterate the whole 360 degrees
+      for (var i = 0; i < text.length; i++)
+      {
+        rainbowtext = rainbowtext + '<span style="color:' + color_from_hue(hue) + '">' + text.charAt(i) + '</span>';
+        hue += step;
+      }
+
+      $(this).html(rainbowtext);
+    });
+  };
+})( jQuery );
+
+(function( $ ) {
+ 
+  $.fn.rainbowize = function() {
+    return this.each(function() {
+      var rainbowtext = '';
+      var hue=0;
+      var step=0;
+ 
+      // get the current text inside element
+      var text = $(this).text();
+ 
+      // hue is 360 degrees
+      if (text.length > 0)
+        step = 360 / (text.length);
+ 
+      // iterate the whole 360 degrees
+      for (var i = 0; i < text.length; i++)
+      {
+        rainbowtext = rainbowtext + '<span style="color:' + color_from_hue(hue) + '">' + text.charAt(i) + '</span>';
+        hue += step;
+      }
+ 
+      $(this).html(rainbowtext);
+    });
+  };
+})( jQuery );
+</script>
+</html>
