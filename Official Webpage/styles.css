@@ -51,3 +51,16 @@ a:active{
 p{
     font-size:10vh;
 }
+.jumbotron{
+    margin-top:5vw;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-bottom:5vw;
+    text-align:left;
+    background-color:black;
+    color:white;
+    border-radius:10vw;
+    border-style:double none double none;
+    border-width:7px;
+    border-color:#db61ff;
+}

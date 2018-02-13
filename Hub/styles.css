@@ -1,0 +1,95 @@
+
+body {
+  text-align: center;
+  font-family: courier;
+  /*background-image: url(https://cdn.shopify.com/s/files/1/0381/4073/products/Jason-Brickhill-Holographic-Mosaic-Tee-SILVER-light-luxe_907bf199-c0f5-4f4b-bc40-74d6f3dbe4a4.jpg?v=1475716719);*/
+  color: #ff6699;
+  background-size: 100%;
+  
+  animation: colorchange 50s linear infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+@keyframes colorchange {
+  0% 100% {
+    background: #ff9eb7;}
+  12.5% {
+    background: #efa8ff;}
+  25% {
+    background: #a8acff;}
+  37.5% {
+    background: #a8ffff;}
+  50% {
+    background: #a8ffc0;}
+  62.5% {
+    background: #f7ffaa;}
+  75% {
+    background: #ffcdaa;}
+  87.5% {
+    background: #ffaaaa;}
+}
+p {
+  color: black;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  bottom: 60%;
+}
+#whatever {
+  background-image: url(https://screenshots.fr.sftcdn.net/fr/scrn/3333000/3333835/transformice-10-535x535.png);
+}
+
+button {
+  height: 20vw;
+  width: 20vw;
+  border-radius: 100%;
+  border-width: 3vw;
+  border-style: double none;
+  border-color: #ff6699;
+  font-size: 2vw;
+  /*background-image:url(https://t7.rbxcdn.com/36a5f95cb3f5b21b60819270bc0e2095);*/
+  background-size: 20vw;
+  font-family: courier;
+  background-repeat: no-repeat;
+}
+#Cp {
+  background-image: url(http://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png);
+  color: #878787;
+  background-color: white;
+}
+#c9 {
+  background-image: url(https://static.c9.io/nc-3.1.3849-aadaa401-wf/static/plugins/c9.profile/static/images/cloud9-logo.svg);
+  background-color: white;
+}
+#aj {
+  background-image: url(https://t7.rbxcdn.com/36a5f95cb3f5b21b60819270bc0e2095);
+  background-color: white;
+}
+#yt {
+  background-image: url(https://seeklogo.com/images/Y/youtube-icon-logo-521820CDD7-seeklogo.com.png);
+}
+#github {
+  background-image: url(https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png);
+  color:#878787;}
+#sg {
+  background-image: url(https://www.elcosd.org/cms/lib/PA02217785/Centricity/Shared/Global%20Images/schoology.jpg);
+  color: #878787;
+}
+#dm {
+  background-image: url();
+}
+#Ff {
+  background-image: url(http://img14.deviantart.net/2401/i/2016/011/1/1/rey_and_bb8_by_alythekitten-d9nm415.png);
+  background-color: white;
+  color:;
+}
+section {
+  background-image: url(https://cdn.shopify.com/s/files/1/0381/4073/products/Jason-Brickhill-Holographic-Mosaic-Tee-SILVER-light-luxe_907bf199-c0f5-4f4b-bc40-74d6f3dbe4a4.jpg?v=1475716719);
+  color: black;
+  text-align:center;
+  font-size:2vw;
+}
+img{
+  height:4vw;
+}
