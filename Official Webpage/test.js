@@ -47,3 +47,20 @@ function calculate() {
 	  $("~Feetfop~Home~").text(pageTitle);
 	});
 });
+
+JavaScript
+
+$(document).ready(function() {
+    if( !$("html").hasClass("backgroundclip") )
+       $(".rainbow").addClass("rainbowize");
+    else
+       $(".rainbow").rainbowize();
+});
+
+
+$(document).ready(function() {
+    if( !$("html").hasClass("backgroundclip") )
+       $(".rainbow").addClass("rainbowize");
+    else
+       $(".rainbow").rainbowize();
+});
